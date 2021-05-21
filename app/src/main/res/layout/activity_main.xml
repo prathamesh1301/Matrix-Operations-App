@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="MATRIX OPERATIONS"
+        android:textColor="@color/white"
+        android:textSize="30sp"></TextView>
+
+    <LinearLayout
+        android:layout_below="@id/textView"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+
+
+        android:orientation="vertical">
+
+        <Button
+            android:text="Add two matrices(3x3)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addMat"
+            android:textSize="20sp"
+            android:background="@drawable/button_bg"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            ></Button>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:text="Multiply two matrices(3X3)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:textSize="20sp"
+            app:backgroundTint="@android:color/holo_green_dark"
+            android:id="@+id/multiplyMat"></Button>
+
+        <Button
+            android:id="@+id/inverseMat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_bg"
+            android:text="Inverse of a matrix"
+            android:textSize="20sp"
+            app:backgroundTint="@android:color/holo_orange_light"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
